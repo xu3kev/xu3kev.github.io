@@ -10,5 +10,14 @@
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0900</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Frobenius Additive Fast Fourier Transform</title>
+      <link>https://xu3kev.github.io/publication/frobenius-additive-fast-fourier-transform/</link>
+      <pubDate>Tue, 18 Dec 2018 18:44:07 +0900</pubDate>
+      
+      <guid>https://xu3kev.github.io/publication/frobenius-additive-fast-fourier-transform/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
