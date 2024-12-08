@@ -14,6 +14,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    body{
+    font-size: 16px;
+    }
+  </style>
+  <style>
+    .container-title {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+      padding: 1rem 1rem 1rem 0; /* Removed left padding */
+
+    }
+    
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+      margin-left: 0; /* Ensures no left margin on image */
+    }
+    
+    .contact-info {
+      padding-top: 0.5rem;
+    }
+    
+    .name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 1rem 0;
+    }
+    
+    .email {
+      margin-bottom: 1rem;
+    }
+    
+    .address {
+      line-height: 1.5;
+    }
+    </style>
+
 </head>
 <body>
 
@@ -25,15 +66,22 @@
         <div class="row">
 
             <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
+            <div class="col-md-8" style="min-height: 100vh; height: auto;">
 
-                <!-- Main Image -->
-            <!-- Contact Info on the Sidebar -->
-            <div class="">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Wen-Ding Li</b></div><br>
-                <p><b>wl678 at cornell.edu</b><br>
-                <p>Computer Science Department<br> Cornell University<br>
-            </div>
+                <div class="container-title">
+                    <img class="profile-image" 
+                         src="https://pbs.twimg.com/profile_images/1530263645493395456/_SJ5Ds4I_400x400.jpg" 
+                         alt="Wen-Ding Li profile picture">
+                    
+                    <div class="contact-info">
+                      <h1 class="name">Wen-Ding Li</h1>
+                      <p class="email"><strong>WL678@cornell.edu</strong></p>
+                      <p class="address">
+                        Computer Science Department<br>
+                        Cornell University
+                      </p>
+                    </div>
+                  </div>
 
 
             <!-- Links on the Sidebar -->
@@ -41,26 +89,50 @@
               <dd><a href="https://scholar.google.com/citations?user=2G2mr9QAAAAJ&hl=en">Google Scholar</a></dd>
             </div>
 
-                <div style="margin-top:5%; text-align:justify;">
-                        I'm a PhD student at Cornell University. I'm interested in machine learning for code generation and symbolic reasoning tasks. Previously I worked at Google and X on large language models for code. Previously I worked in Preferred Neworks. Before that I was a research assistant in Academia Sinica. I worked on design and analysis of efficient algorithms to solve several important problems arising from cryptology, as well as the development and implementation of these algorithms on CPUs and GPUs.
+                <div style="margin-top:3%; text-align:justify;">
+                        I'm a PhD student at Cornell University working with <a href="https://www.cs.cornell.edu/~ellisk/">Kevin Ellis</a>. I'm interested in machine learning for code generation and reasoning tasks. Previously I worked at Google and X on large language models for code. 
+                        <!-- <br> -->
+                        <!-- Before that I was a research assistant in Academia Sinica. I worked on design and analysis of efficient algorithms to solve several important problems arising from cryptology, as well as the development and implementation of these algorithms on CPUs and GPUs. -->
                 </div>
-            <div class="" style="text-align:justify; margin-top:10%">
-                <h2 id="publications">Preprint</h2>
-
-                <ul>
-                        <li class="paper"><a href="https://arxiv.org/abs/2210.00848">I Speak, You Verify: Toward Trustworthy Neural Program Synthesis
-</a> <br>Darren Key, <b>Wen-Ding Li</b>, Kevin Ellis</li>
-                </ul>
-                <h2 id="publications">Publications</h2>
+            <div class="" style="text-align:justify; margin-top:0%">
+<!--                <h2 id="publications">Preprint</h2>
 
                 <ul>
                         <li class="paper"><a href="https://arxiv.org/abs/2306.02049">LambdaBeam: Neural Program Search with Higher-Order Functions and Lambdas
-</a> <br>Kensen Shi, Hanjun Dai, <b>Wen-Ding Li</b>, Kevin Ellis, Charles Sutton. Neurips 2023</li>
-                        <li class="paper"><a href="https://arxiv.org/abs/2212.09248">Natural Language to Code Generation in Interactive Data Science Notebooks</a> <br>Pengcheng Yin, <b>Wen-Ding Li</b>, Kefan Xiao, Abhishek Rao, Yeming Wen, Kensen Shi, Joshua Howland, Paige Bailey, Michele Catasta, Henryk Michalewski, Alex Polozov, Charles Sutton. ACL 2023</li>
+</a> <br>Kensen Shi, Hanjun Dai, <b>Wen-Ding Li</b>, Kevin Ellis, Charles Sutton</li>
+                </ul>
+                <ul>
+                        <li class="paper"><a href="https://arxiv.org/abs/2210.00848">I Speak, You Verify: Toward Trustworthy Neural Program Synthesis
+</a> <br>Darren Key, <b>Wen-Ding Li</b>, Kevin Ellis</li>
+                </ul>-->
+                <h2 id="publications">Publications</h2>
+
+                <ul>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2411.02272">Combining Induction and Transduction for Abstract Reasoning</a></b> <br>
+                                <b>Wen-Ding Li</b>*, Keya Hu*, Carter Larsen, Yuqing Wu, Simon Alford, Caleb Woo, Spencer M. Dunn, Hao Tang, Michelangelo Naim, Dat Nguyen, Wei-Long Zheng, Zenna Tavares, Yewen Pu, Kevin Ellis
+                                <br><i><b> ARC-AGI Paper Award 1st Place</b></i></li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2406.08316">Is Programming by Example solved by LLMs?
+                                </a></b> <br><b>Wen-Ding Li</b>, Kevin Ellis. <br><b><i>NeurIPS 2024</i></b></li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2403.07974">LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code
+                        </a></b>
+                                <br>Naman Jain, King Han, Alex Gu*, <b>Wen-Ding Li</b>*, Fanjia Yan*, Tianjun Zhang*, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica</li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2402.19475">The Counterfeit Conundrum: Can Code Language Models Grasp the Nuances of Their Incorrect Generations?</a></b>
+                                <br> Alex Gu, <b>Wen-Ding Li</b>, Naman Jain, Theo X. Olausson, Celine Lee, Koushik Sen, Armando Solar-Lezama. <br><i><b>ACL 2024</b></i></li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2402.19173">StarCoder2 and The Stack v2: The Next Generation</a></b>
+                                <br> Anton Lozhkov, ..., <b>Wen-Ding Li</b>, ..., Leandro von Werra*, Harm de Vries*</li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2306.02049">LambdaBeam: Neural Program Search with Higher-Order Functions and Lambdas
+                                </a></b> <br>Kensen Shi, Hanjun Dai, <b>Wen-Ding Li</b>, Kevin Ellis, Charles Sutton. <br><i><b> NeurIPS 2023</b></i></li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2212.09248">Natural Language to Code Generation in Interactive Data Science Notebooks</a></b> <br>Pengcheng Yin, <b>Wen-Ding Li</b>, Kefan Xiao, Abhishek Rao, Yeming Wen, Kensen Shi, Joshua Howland, Paige Bailey, Michele Catasta, Henryk Michalewski, Alex Polozov, Charles Sutton. <br><b><i>ACL 2023</i></b></li>
+                        <li class="paper"><b><a href="https://arxiv.org/abs/2210.00848">Toward Trustworthy Neural Program Synthesis
+                        </a></b><br><b>Wen-Ding Li</b>*,Darren Key*, Kevin Ellis</li>
+                        <li class="paper"><b><a href="https://dl.acm.org/doi/pdf/10.1145/3208976.3208998">Frobenius Additive Fast Fourier Transform</a></b> <br><b>Wen-Ding Li</b>, Ming-Shing Chen, Po-Chun Kuo, Chen-Mou Cheng, Bo-Yin Yang. <br><i><b>ISSAC 2018</b></i></li>
+                        <!--
+                        <li class="paper"><a href="https://eprint.iacr.org/2017/636.pdf">Implementing 128-bit secure mpkc signatures</a> <br>Ming-Shing Chen, <b>Wen-Ding Li</b>, Bo-Yuan Peng, Bo-Yin Yang, Chen-Mou Cheng. IEICE 2018</li>
+                        -->
+                        <!--
                         <li class="paper"><a href="https://jise.iis.sinica.edu.tw/JISESearch/pages/View/PaperView.jsf?keyId=182_2453#">High Performance Post-Quantum Key Exchange on FPGAs </a> <br>Po-Chun Kuo, Yu-Wei Chen, Yuan-Che Hsu, Chen-Mou Cheng, <b>Wen-Ding Li</b>, Bo-Yin Yang. J. Inf. Sci. Eng. 2021</li>
                         <li class="paper"><a href="https://jise.iis.sinica.edu.tw/JISESearch/pages/View/PaperView.jsf?keyId=182_2452#">Parallelization on Gauss Sieve Algorithm over Ideal Lattice</a> <br>Po-Chun Kuo, Chen-Mou Cheng, <b>Wen-Ding Li</b>, Bo-Yin Yang. J. Inf. Sci. Eng. 2021</li>
-                        <li class="paper"><a href="https://dl.acm.org/doi/pdf/10.1145/3208976.3208998">Frobenius additive fast Fourier transform</a> <br><b>Wen-Ding Li</b>, Ming-Shing Chen, Po-Chun Kuo, Chen-Mou Cheng, Bo-Yin Yang. ISSAC 2018</li>
-                        <li class="paper"><a href="https://eprint.iacr.org/2017/636.pdf">Implementing 128-bit secure mpkc signatures</a> <br>Ming-Shing Chen, <b>Wen-Ding Li</b>, Bo-Yuan Peng, Bo-Yin Yang, Chen-Mou Cheng. IEICE 2018</li>
+                        -->
                 </ul>
 
             </div>
@@ -79,3 +151,4 @@
 </body>
 
 </html>
+~
